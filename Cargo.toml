@@ -4,8 +4,8 @@ resolver = "3"
 
 members = [
     "crates/ruui",
-    "crates/ruui-cli",
-    "crates/ruui-macros",
+    "crates/ruui-cli", "crates/ruui-core",
+    "crates/ruui-macros"
 ]
 
 [workspace.package]

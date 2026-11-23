@@ -146,6 +146,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "ruui-core"
+version = "0.1.0"
+
+[[package]]
 name = "ruui-macros"
 version = "0.1.0"
 
