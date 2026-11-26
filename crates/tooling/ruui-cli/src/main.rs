@@ -31,6 +31,10 @@ enum Commands {
 
 fn execute(cli: Cli) -> Result<ExitCode, Box<dyn std::error::Error>> {
     println!("Hello, world!");
+
+    // TODO add branching and redirects to different modules. Business logic should not live in this module
+    //   it should live as accessible functions which other modules may be able to reuse.
+
     Ok(ExitCode::SUCCESS)
 }
 

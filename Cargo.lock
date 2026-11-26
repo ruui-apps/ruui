@@ -139,6 +139,10 @@ name = "ruui"
 version = "0.1.0"
 
 [[package]]
+name = "ruui-bridge"
+version = "0.1.0"
+
+[[package]]
 name = "ruui-cli"
 version = "0.1.0"
 dependencies = [
@@ -150,11 +154,27 @@ name = "ruui-core"
 version = "0.1.0"
 
 [[package]]
+name = "ruui-ios-swiftui"
+version = "0.1.0"
+
+[[package]]
+name = "ruui-macos-swiftui"
+version = "0.1.0"
+
+[[package]]
 name = "ruui-macros"
 version = "0.1.0"
 dependencies = [
  "proc-macro2",
 ]
+
+[[package]]
+name = "ruui-swiftui"
+version = "0.1.0"
+
+[[package]]
+name = "ruui-watchos-swiftui"
+version = "0.1.0"
 
 [[package]]
 name = "strsim"
