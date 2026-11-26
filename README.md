@@ -31,13 +31,12 @@ contract and separate rendering backends:
 ```text
 ruui/
 ├── crates/
-│   ├── ruui/                        Public API
-│   ├── ruui-macros/                 tbd (need to explain this better)
-│   ├── ruui-(platform)-(framework)/ Specific platform and framework bindings
-│   ├── ruui-build/                  Project and Cargo tooling
-│   └── ruui-cli/                    Cli tool to trigger ruui-build and other assistive tools
-├── examples/                        Examples of how to use
-└── Cargo.toml                       Workspace members and shared dependencies
+│   ├── framework/       Shared framework functionality, components, reactivity and interoperability
+│   ├── platforms/       Platform-specific implementations using native UI frameworks
+│   └── tooling/         CLI, build orchestration and development utilities
+├── examples/            Example applications demonstrating RUUI
+├── templates/           Project templates used by the CLI
+└── Cargo.toml           Workspace members and shared dependencies
 ```
 
 ## Testing Locally
