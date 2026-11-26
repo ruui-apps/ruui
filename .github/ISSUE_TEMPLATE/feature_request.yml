@@ -1,5 +1,5 @@
-name: Feature Request
-description: Suggest a new feature or improvement to RUUI.
+name: Feature Request / Improvement
+description: Suggest new functionality, performance improvements or enhancements to RUUI.
 title: "feat: "
 labels: ["enhancement"]
 
@@ -14,6 +14,21 @@ body:
 
         Please focus on the problem you're trying to solve.
         You don't need to have a complete solution.
+
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request type
+      description: What kind of improvement are you proposing?
+      options:
+        - New feature
+        - General improvement
+        - Performance optimisation
+        - API improvement
+        - Developer experience
+        - Other
+    validations:
+      required: true
 
   - type: dropdown
     id: component
