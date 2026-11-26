@@ -1,0 +1,75 @@
+name: Feature Request
+description: Suggest a new feature or improvement to RUUI.
+title: "feat: "
+labels: ["enhancement"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for suggesting an improvement!
+
+        We're interested in ideas that make RUUI easier to use,
+        more capable and better suited to native development.
+
+        Please focus on the problem you're trying to solve.
+        You don't need to have a complete solution.
+
+  - type: dropdown
+    id: component
+    attributes:
+      label: Affected area
+      description: Which part of RUUI would this improve?
+      options:
+        - Public API
+        - Components / Widgets
+        - Core framework
+        - Reactivity
+        - Procedural macros
+        - Platform backend
+        - CLI / Build tooling
+        - Documentation
+        - Other / Unsure
+    validations:
+      required: true
+
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: |
+        Explain the limitation, difficulty or missing
+        capability you've encountered.
+      placeholder: Describe the problem or use case.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Proposed solution
+      description: |
+        Describe how you think RUUI could address this problem.
+        Code examples or suggested APIs are welcome.
+    validations:
+      required: false
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives considered
+      description: |
+        Have you tried another approach or considered
+        a different solution?
+    validations:
+      required: false
+
+  - type: textarea
+    id: context
+    attributes:
+      label: Additional context
+      description: |
+        Include examples, references, screenshots
+        or related issues that might help.
+    validations:
+      required: false

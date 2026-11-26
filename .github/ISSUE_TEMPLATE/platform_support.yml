@@ -1,0 +1,112 @@
+name: Platform Support
+description: Request a new platform, native UI framework or improvements to existing platform support.
+title: "plat: "
+labels: ["platform"]
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        RUUI aims to provide consistent native UI support across
+        different platforms and frameworks.
+
+        Use this template to request new platform support,
+        report missing, incomplete functionality, or suggest
+        platform-specific improvements.
+
+        You don't need to know how the implementation would work.
+        Please provide as much relevant information as you can.
+
+  - type: dropdown
+    id: request_type
+    attributes:
+      label: Request type
+      description: What kind of platform support are you requesting?
+      options:
+        - New platform support
+        - New native UI framework / backend
+        - Missing functionality
+        - Incomplete functionality
+        - New platform-specific feature
+        - Platform-specific improvement
+        - Other
+    validations:
+      required: true
+
+  - type: input
+    id: platform
+    attributes:
+      label: Target platform
+      description: Which operating system or device does this concern?
+      placeholder: "e.g. Windows, macOS, Linux, Android, watchOS"
+    validations:
+      required: true
+
+  - type: input
+    id: framework
+    attributes:
+      label: Native UI framework
+      description: Which native framework does this relate to, if known?
+      placeholder: "e.g. SwiftUI, GTK4, WinUI"
+    validations:
+      required: false
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: |
+        Describe the missing functionality, proposed feature
+        or platform support you'd like to see.
+    validations:
+      required: true
+
+  - type: textarea
+    id: use_case
+    attributes:
+      label: Use case
+      description: |
+        Explain what you're trying to achieve and why
+        this functionality would be useful.
+    validations:
+      required: true
+
+  - type: textarea
+    id: current_behaviour
+    attributes:
+      label: Current behaviour or limitations
+      description: |
+        If the platform is already supported, explain what
+        currently works, what is missing or what is incomplete.
+    validations:
+      required: false
+
+  - type: textarea
+    id: expected_behaviour
+    attributes:
+      label: Expected behaviour
+      description: |
+        Describe how you'd expect RUUI to support this
+        functionality or behave on the target platform.
+    validations:
+      required: false
+
+  - type: textarea
+    id: considerations
+    attributes:
+      label: Technical considerations
+      description: |
+        Include any relevant native APIs, SDKs, limitations
+        or implementation suggestions you're aware of.
+    validations:
+      required: false
+
+  - type: textarea
+    id: references
+    attributes:
+      label: References and additional context
+      description: |
+        Link to relevant documentation, examples, screenshots
+        or related issues.
+    validations:
+      required: false

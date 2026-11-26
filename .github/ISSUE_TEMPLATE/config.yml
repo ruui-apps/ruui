@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Question / Support
+    url: https://github.com/ruui-apps/ruui/discussions/new
+    about: Ask questions, request clarification or get help using RUUI.

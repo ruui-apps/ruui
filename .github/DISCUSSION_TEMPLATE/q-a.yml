@@ -1,0 +1,48 @@
+title: "[Question] "
+
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out!
+
+        Questions are always welcome. If something is
+        unclear or difficult to find, it helps us
+        improve RUUI for everyone.
+
+  - type: textarea
+    id: goal
+    attributes:
+      label: What are you trying to achieve?
+      description: Explain what you're working on.
+    validations:
+      required: true
+
+  - type: textarea
+    id: research
+    attributes:
+      label: Where have you looked?
+      description: |
+        Share any documentation, examples or discussions
+        you've checked. It's fine if you haven't found
+        anything relevant.
+    validations:
+      required: false
+
+  - type: textarea
+    id: attempts
+    attributes:
+      label: What have you tried?
+      description: |
+        Include relevant code, commands or approaches
+        you've attempted, if applicable.
+    validations:
+      required: false
+
+  - type: textarea
+    id: question
+    attributes:
+      label: What do you need help with?
+      description: Explain what is unclear or where you're stuck.
+    validations:
+      required: true
